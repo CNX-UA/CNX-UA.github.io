@@ -1,0 +1,50 @@
+.FAQ_Accordion {
+    width: 100%;
+    max-width: 700px;
+    margin: 10px auto;
+}
+.FAQ_Accordion > button {
+    background-color: #f1f1f1; 
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white; 
+    text-align: left;
+    outline: none;
+    font: 1.1rem "Fira Sans", sans-serif; 
+    transition: background-color 0.3s;
+}
+.FAQ_Accordion > button:not(.active):hover {
+    background-color: #ddd; 
+}
+.FAQ_Accordion > button.active {
+    background-color: #ccc; 
+    font-weight: bold;
+}
+.faq_panel {
+    background-color: white; 
+    display: grid; 
+    overflow: hidden;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows .3s, ease .3s;
+    border-bottom: 1px solid #ddd; 
+    color: black;
+    border: none;
+}
+.faq_panel.active {
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.faq_panel p {
+    overflow: hidden;
+    font: 1.2rem "Fira Sans", sans-serif;
+    color: black;
+    display: block; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    margin: 0;
+}
