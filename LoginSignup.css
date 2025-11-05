@@ -1,12 +1,13 @@
 /* --- Login/Signup Display --- */
 .loginSignupTab{
-    display: flex;            
+    display: flex;  
+    margin: auto;          
     align-items: center;      
     justify-content: center;  
     gap: 20px;
     background-color: white;
     font: 1.2rem "Fira Sans", sans-serif;
-    border-radius: 80%;
+    width: 840px;
 }
 .loginSignupTab > div{
     color: black;
