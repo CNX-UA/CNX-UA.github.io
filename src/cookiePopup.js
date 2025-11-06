@@ -1,14 +1,14 @@
 function initializeCookiePopup() {
 
-    const cookiePopup = document.getElementById("cookiePopup");
-    const accept_cookies_button = document.getElementById("acceptCookiesButton");
+    const cookiePop = document.getElementById("cookiePopup");
+    const acceptCookiesButton = document.getElementById("acceptCookiesButton");
 
     if(localStorage.getItem("cookieAccept") === "true"){
         cookiePopup.classList.add("hidden");
     }
 
-    accept_cookies_button.addEventListener("click",() => {
-        cookiePopup.classList.add("hidden");
+    acceptCookiesButton.addEventListener("click",() => {
+        cookiePop.classList.add("hidden");
         localStorage.setItem("cookieAccept","true");
     });
 };

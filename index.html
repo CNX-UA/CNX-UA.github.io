@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/loginSignup.css">
     <link rel="stylesheet" href="styles/cookiePopup.css">
     <link rel="stylesheet" href="styles/faqAccordion.css">
+    <link rel="stylesheet" href="styles/tab1Droplist.css">
 <title>Tabs</title>
 </head>
 <body>
@@ -51,7 +52,25 @@
     <!-- Tab bar content display -->
     <div class="tabContentContainer">
         <div id="tab1Content" class="tabContent active">
-            <p>First tab</p>
+            <!-- tab1 containing droplist-->
+            <section id="dropListDisplay">
+                <div class="droplistButtonTab1" data-droplist="droplistTab1-1">Drop1</div>
+                    <div class="droplistTab1">
+                        <ul class="droplistContentTab1" id="droplistTab1-1">
+                            <li>123</li>
+                            <li>321</li>
+                            <li>213</li>
+                        </ul>
+                    </div>
+                <div class="droplistButtonTab1" data-droplist="droplistTab1-2">Drop2</div>
+                    <div class="droplistTab1">
+                        <ul class="droplistContentTab1" id="droplistTab1-2">
+                            <li>123</li>
+                            <li>321</li>
+                            <li>213</li>
+                        </ul>
+                    </div>
+            </section>
         </div>
         <!-- tab2 containing textarea -->
         <div id="tab2Content" class="tabContent">
@@ -94,6 +113,7 @@
             <button id="acceptCookiesButton">Accept</button>
         </div>
     </section>
+    <script src="src/generalDroplist.js"></script>
     <script src="src/generalTextarea.js"></script>
     <script src="src/generalFormButton.js"></script>
     <script src="src/cookiePopup.js"></script>
