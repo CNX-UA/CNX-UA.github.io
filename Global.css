@@ -11,7 +11,7 @@ p{
     justify-content: center;
     font: 1.2rem "Fira Sans", sans-serif;
 }
-.feedback_textarea_tab{
+.feedbackTextareaTab{
     resize:none;
 }
 .error {

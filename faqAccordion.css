@@ -1,9 +1,9 @@
-.FAQ_Accordion {
+.faqAccordion {
     width: 100%;
     max-width: 700px;
     margin: 10px auto;
 }
-.FAQ_Accordion > button {
+.faqAccordion > button {
     background-color: #f1f1f1; 
     color: #444;
     cursor: pointer;
@@ -16,14 +16,14 @@
     font: 1.1rem "Fira Sans", sans-serif; 
     transition: background-color 0.3s;
 }
-.FAQ_Accordion > button:not(.active):hover {
+.faqAccordion > button:not(.active):hover {
     background-color: #ddd; 
 }
-.FAQ_Accordion > button.active {
+.faqAccordion > button.active {
     background-color: #ccc; 
     font-weight: bold;
 }
-.faq_panel {
+.faqPanel {
     background-color: white; 
     display: grid; 
     overflow: hidden;
@@ -33,12 +33,12 @@
     color: black;
     border: none;
 }
-.faq_panel.active {
+.faqPanel.active {
     padding: 20px;
     display: grid;
     grid-template-rows: 1fr;
 }
-.faq_panel p {
+.faqPanel p {
     overflow: hidden;
     font: 1.2rem "Fira Sans", sans-serif;
     color: black;
@@ -48,6 +48,6 @@
     text-align: left;
     margin: 0;
 }
-#tab3_content.active {
+#tab3Content.active {
     width: 100%;
 }
