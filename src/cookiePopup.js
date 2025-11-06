@@ -1,6 +1,6 @@
 function initializeCookiePopup() {
 
-    const cookiePop = document.getElementById("cookiePopup");
+    const cookiePopup = document.getElementById("cookiePopupDisplay");
     const acceptCookiesButton = document.getElementById("acceptCookiesButton");
 
     if(localStorage.getItem("cookieAccept") === "true"){
@@ -8,7 +8,7 @@ function initializeCookiePopup() {
     }
 
     acceptCookiesButton.addEventListener("click",() => {
-        cookiePop.classList.add("hidden");
+        cookiePopup.classList.add("hidden");
         localStorage.setItem("cookieAccept","true");
     });
 };

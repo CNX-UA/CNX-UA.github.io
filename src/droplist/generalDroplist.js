@@ -22,4 +22,6 @@ function initializeDroplistGeneral(droplistLocation, droplistContents, datasetKe
     };
 
   droplists.forEach((button) => button.addEventListener("click", handleDroplistContents));
+
+  return droplistContentsReset;
 };

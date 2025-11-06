@@ -37,7 +37,7 @@
     transition: background-color 0.3s;
 }
 /* --- Cookie Popup Section Styles --- */
-#cookiePopup{
+#cookiePopupDisplay{
     border: 8px solid grey;
     border-radius: 30px;
     max-width: 350px;
@@ -51,6 +51,6 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     width: auto;
 }
-#cookiePopup.hidden {
+#cookiePopupDisplay.hidden {
     display: none;
 }
