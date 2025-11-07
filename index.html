@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/tabs.css">
-    <link rel="stylesheet" href="styles/loginSignup.css">
-    <link rel="stylesheet" href="styles/cookiePopup.css">
-    <link rel="stylesheet" href="styles/faqAccordion.css">
-    <link rel="stylesheet" href="styles/tab1Droplist.css">
+    <link rel="stylesheet" href="styles/output.css">
 <title>Tabs</title>
 </head>
-<body>
+<body class="bg-gray-200">
      <!-- Login/Signup Display-->
-    <section id="loginSignupDisplay">
-        <div class="loginSignupTab">
-            <div class="login active" data-loginsignup="loginContent">Login</div>
-            <div class="signup" data-loginsignup="signupContent">Signup</div>
+    <!-- <section id="loginSignupDisplay">
+        <div class="loginSignupTab flex justify-center gap-5 bg-white max-w-[840px] mx-auto text-xl">
+            <div class="login active" data-login-signup="loginContent">Login</div>
+            <div class="signup" data-login-signup="signupContent">Signup</div>
         </div>
-    </section>
+    </section> commented out due to not being needed-->
     <!-- Login/Signup content Display-->
-    <section id="loginSignupContent">
-        <div class="loginSignupContentContainer">
+    <!-- <section id="loginSignupContent">
+        <div class="loginSignupContentContainer max-w-[800px] mx-auto my-2.5 p-5 bg-black text-white text-xl">
             <div class="loginSignupContent active" id="loginContent">
                 <form class="login" action="">
                     <label for="loginEmail">Email:</label><br>
@@ -39,78 +34,108 @@
                 </form>
             </div>
         </div>
-    </section>
+    </section> commented out due to not being needed-->
     <!-- Tab bar display -->
-    <section id="tabBarDisplay">
-    <div class="tabBar">
-        <div class="tab1" data-tab="tab1Content">First tab</div>
-        <div class="tab2" data-tab="tab2Content">Second tab</div>
-        <div class="tab3" data-tab="tab3Content">Third tab</div>
-        <div class="tab4" data-tab="tab4Content">Fourth tab</div>
+    <section id="tabBarDisplay" class="rounded-[20px] mx-auto bg-gray-200 flow-root">
+    <div class="tabBar flex px-40 items-center gap-5 bg-gray-50 text-xl text-gray-800 text-center">
+        <p class="mr-auto font-bold ">Artem Dubinnikov</p>
+        <div class="tab1" data-tab="tab1Content">Skills</div>
+        <div class="tab2" data-tab="tab2Content">Contact</div>
+        <div class="tab3" data-tab="tab3Content">Eduction</div>
+        <div class="tab4" data-tab="tab4Content">Portfolio</div>
+        <div class="tab5" data-tab="tab5Content">Previous Work Experience</div>
     </div>
-    <p>Each tab should hide content of the other tab and show the content of clicked tab. By default, enable first tab.</p>
+    <div class="max-w-[700px] min-w-[700px] min-h-[400px] my-20 p-5 rounded-[20px] shadow-md bg-gray-50 text-gray-800 text-xl inline-block float-left ml-10 align-top text-left">
+        Placeholder
+    </div>
     <!-- Tab bar content display -->
-    <div class="tabContentContainer">
+    <div class="tabContentContainer max-w-[800px] min-w-[800px] mt-20 mb-2.5 p-5 rounded-[20px] shadow-md bg-gray-50 text-gray-800 text-xl
+     min-h-[600px] inline-block float-right align-top text-left mr-40">
         <div id="tab1Content" class="tabContent active">
             <!-- tab1 containing droplist-->
             <section id="dropListDisplay">
-                <div class="droplistButtonTab1" data-droplist="droplistTab1-1">Drop1</div>
+                <div class="droplistButtonTab1 rounded-tl-lg" data-droplist="droplistTab1-1">Placeholder</div>
                     <div class="droplistTab1">
                         <ul class="droplistContentTab1" id="droplistTab1-1">
-                            <li><button type="button">Action 1</button></li>
-                            <li><button type="button">Action 2</button></li>
-                            <li><button type="button">Action 3</button></li>
+                            <li><button type="button">Placeholder</button></li>
+                            <li><button type="button">Placeholder</button></li>
+                            <li><button type="button">Placeholder</button></li>
                         </ul>
                     </div>
-                <div class="droplistButtonTab1" data-droplist="droplistTab1-2">Drop2</div>
+                <div class="droplistButtonTab1" data-droplist="droplistTab1-2">Placeholder</div>
                     <div class="droplistTab1">
                         <ul class="droplistContentTab1" id="droplistTab1-2">
-                            <li><button type="button">Action 1</button></li>
-                            <li><button type="button">Action 2</button></li>
-                            <li><button type="button">Action 3</button></li>
+                            <li><button type="button">Placeholder</button></li>
+                            <li><button type="button">Placeholder</button></li>
+                            <li><button type="button">Placeholder</button></li>
                         </ul>
                     </div>
             </section>
         </div>
         <!-- tab2 containing textarea -->
-        <div id="tab2Content" class="tabContent">
+        <div id="tab2Content" class="tabContent text-black">
             <section id="feedback textareaDisplay">
                 <form class="feedbackTextarea" id="feedbackTextarea" action=""></form>
-                <label for="feedbackInput">Leave your feedback</label>
-                <textarea class="feedbackTextareaTab" id="feedbackInput" form="feedbackTextarea" autofocus cols="70" rows="4"></textarea>
-                <span class="feedbackTextareaCounter">0 / 250</span>
-                <button class="sendFeedback" id="sendFeedback">Send Feedback</button>
+                <label for="feedbackInput" class="text-gray-800">Placeholder</label>
+                <textarea class="feedbackTextareaTab resize-none w-140 bg-slate-200 rounded-lg text-gray-800" id="feedbackInput" form="feedbackTextarea" autofocus cols="70" rows="4"></textarea>
+                <span class="feedbackTextareaCounter text-gray-800">0 / 250</span>
+                <button class="sendFeedback bg-white text-gray-800 rounded-xs" id="sendFeedback">Placeholder</button>
             </section>
         </div>
         <div id="tab3Content" class="tabContent accordion">
             <section id="faqDisplay">
-                <div class="faqAccordion">
-                    <button type="button" class="faqAccordion1" data-panel="panel1">1. </button>
+                <div class="faqAccordion w-full max-w-[700px] mx-auto my-2.5">
+                    <button type="button" class="faqAccordion1 rounded-tl-lg" data-panel="panel1">1. </button>
                         <div class="faqPanel" id="panel1">
-                            <p>123</p>
+                            <p>Placeholder</p>
                         </div>
                     <button type="button" class="faqAccordion2" data-panel="panel2">2. </button>
                         <div class="faqPanel" id="panel2">
-                            <p>123</p>
+                            <p>Placeholder</p>
                         </div>
                     <button type="button" class="faqAccordion3" data-panel="panel3">3. </button>
                         <div class="faqPanel" id="panel3">
-                            <p>123</p>
+                            <p>Placeholder</p>
                         </div>
                 </div>
             </section>
         </div>
         <div id="tab4Content" class="tabContent">
-            <p>Fourth tab</p>
+            <p>Placeholder</p>
+        </div>
+        <div id="tab5Content" class="tabContent accordion">
+            <section id="workExpDisplay">
+                <div class="workExpAccordion w-full max-w-[700px] mx-auto my-2.5">
+                    <button type="button" class="workExpAccordion1 rounded-tl-lg" data-panel="workExp-panel1">1. Placeholder</button>
+                        <div class="workExpPanel" id="workExp-panel1">
+                            <p>Placeholder</p>
+                        </div>
+                    <button type="button" class="workExpAccordion2" data-panel="workExp-panel2">2. Placeholder</button>
+                        <div class="workExpPanel" id="workExp-panel2">
+                            <p>Placeholder</p>
+                        </div>
+                    <button type="button" class="workExpAccordion3" data-panel="workExp-panel3">3. Placeholder</button>
+                        <div class="workExpPanel" id="workExp-panel3">
+                            <p>Placeholder</p>
+                        </div>
+                </div>
+            </section>
         </div>
     </div>
-    <p>Add some dummy content or just add plain text showing the tab.</p>
+    <div class="max-w-[600px] min-w-[600px] mt-140 p-5 rounded-[20px] shadow-md bg-gray-50 text-gray-800 text-xl min-h-[200px] relative left-10">
+        Placeholder
+    </div>
+    <div class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full p-10 shadow-md bg-gray-50 text-gray-800 text-xl">
+        Placeholder
+    </div>
     </section>
     <!--Cookie Popup Display-->
-    <section id="cookiePopupDisplay">
-        <div class="cookiePopup">
+    <section id="cookiePopupDisplay" class="fixed bottom-[800px] right-[780px] z-1000 w-auto max-w-[350px] 
+    border-8 border-gray-400 rounded-[30px] bg-gray-100 shadow-lg mx-auto my-2.5">
+        <div class="cookiePopup flex flex-col items-center justify-center gap-0 text-xl">
             <p>Accept Cookie</p>
-            <button id="acceptCookiesButton">Accept</button>
+            <button id="acceptCookiesButton" class="flex items-center justify-center gap-5 bg-white
+                text-xl rounded-md p-2 hover:bg-gray-100 cursor-pointer">Accept</button>
         </div>
     </section>
     <script src="src/droplist/generalDroplist.js"></script>

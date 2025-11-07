@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@layer components {
+    /* .loginSignupTab > div {
+        @apply p-2.5 cursor-pointer border-b border-black transition-colors duration-300;
+    }
+    .loginSignupTab > div:not(.active):hover {
+        @apply hover:bg-gray-100;
+    }
+    .loginSignupTab > div.active {
+        @apply font-bold border-b-2;
+    }
+    .loginSignupContent {
+        @apply hidden;
+    }
+    .loginSignupContent.active {
+        @apply block;
+    } 
+     commented out since it's unneeded   */ 
+
+    .tabBar > div {
+        @apply p-2.5 cursor-pointer border-b border-gray-400 transition-colors duration-300;
+    }
+    .tabBar > div:not(.active):hover {
+        @apply hover:bg-gray-100;
+    }
+    .tabBar > div.active {
+        @apply font-bold border-b-2 border-black;
+    }
+    .tabContent {
+        @apply hidden;
+    }
+    .tabContent.active {
+        @apply block;
+    }
+
+    .faqAccordion > button {
+        @apply bg-gray-100 text-gray-800 cursor-pointer p-[18px] w-full border-none border-b border-white text-left outline-none text-lg transition-colors duration-300;
+    }
+    .faqAccordion > button:not(.active):hover {
+        @apply hover:bg-gray-300;
+    }
+    .faqAccordion > button.active {
+        @apply bg-gray-400 font-bold;
+    }
+
+    .faqPanel {
+        @apply bg-white text-gray-800 overflow-hidden grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out;
+    }
+    .faqPanel.active {
+        @apply grid-rows-[1fr] p-5;
+    }
+    .faqPanel p {
+        @apply overflow-hidden text-xl;
+    }
+
+    .droplistButtonTab1 {
+        @apply bg-gray-100 cursor-pointer;
+    }
+    .droplistTab1 {
+        @apply bg-slate-200 px-2.5 py-1.25;
+    }
+
+    .droplistContentTab1 {
+        @apply hidden;
+    }
+    .droplistContentTab1.active {
+        @apply block;
+    }
+    .droplistContentTab1.active > li:hover {
+        @apply italic;
+    }
+
+    .workExpAccordion > button {
+        @apply bg-gray-100 text-gray-800 cursor-pointer p-[18px] w-full border-none border-b border-white text-left outline-none text-lg transition-colors duration-300;
+    }
+    .workExpAccordion > button:not(.active):hover {
+        @apply hover:bg-gray-300;
+    }
+    .workExpAccordion > button.active {
+        @apply bg-gray-400 font-bold;
+    }
+
+    .workExpPanel {
+        @apply bg-white text-gray-800 overflow-hidden grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out;
+    }
+    .workExpPanel.active {
+        @apply grid-rows-[1fr] p-5;
+    }
+    .workExpPanel p {
+        @apply overflow-hidden text-xl;
+    }
+
+    #cookiePopupDisplay.hidden {
+        @apply hidden;
+    }
+
+    .error {
+        @apply border-red-500;
+        @apply focus:outline-none focus:ring-2 focus:ring-red-500;
+    }
+}
