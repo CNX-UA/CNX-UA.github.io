@@ -1,4 +1,4 @@
-initializeCookiePopup();
+/* initializeCookiePopup(); temp disabled till fix*/
 initializeContentButtons(".droplistContentTab1 button", 
     handleDroplistContent(
         initializeDroplistGeneral(".droplistButtonTab1",".droplistContentTab1","droplist",),
