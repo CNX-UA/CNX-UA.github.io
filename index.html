@@ -6,25 +6,33 @@
     <link rel="stylesheet" href="styles/output.css">
 <title>Tabs</title>
 </head>
-<body class="bg-gray-200">
+<body class="bg-gray-200 dark:bg-gray-900 dark:text-gray-300 flex flex-col min-h-screen">
     <!-- Tab bar display -->
-    <section id="tabBarDisplay" class="rounded-[20px] mx-auto bg-gray-200 flow-root">
-    <div class="tabBar flex px-40 items-center gap-5 bg-gray-50 text-xl text-gray-800 text-center">
+<header id="tabBarDisplay" class="sticky top-0 z-10 rounded-b-[20px] mx-auto bg-gray-200 dark:bg-gray-900 shadow-md w-full ">
+    <div class="tabBar flex flex-col sm:flex-row px-4 lg:px-40 items-center gap-5 bg-gray-50 dark:bg-gray-800 text-xl w-full
+     text-gray-800 dark:text-gray-200 text-center py-2">
         <p class="mr-auto font-bold ">Artem Dubinnikov</p>
         <div class="tab1" data-tab="tab1Content">Skills</div>
         <div class="tab3" data-tab="tab3Content">Education</div>
         <div class="tab4" data-tab="tab4Content">Projects</div>
+        <button id="themeToggle" class="ml-4 px-3 py-1 rounded-lg text-sm font-medium bg-gray-200 dark:bg-gray-800
+         hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors dark:text-gray-200">
+            Dark Mode
+        </button>
         <!--<div class="tab5" data-tab="tab5Content">Experience</div> 
         temporarily disabled-->
     </div>
+</header>
+<main class="grow w-full max-w-7xl mx-auto py-10 px-4 flex flex-col lg:flex-row justify-center gap-8">
+<div class="w-full lg:max-w-md flex flex-col gap-8">
     <section id="aboutMeSection">
-    <div class="max-w-[700px] min-w-[700px] min-h-[400px] my-20 p-5 rounded-[20px] shadow-md bg-gray-50 text-gray-800
-     text-xl inline-block float-left ml-10 align-top text-left">
+    <div class="p-5 rounded-[20px] shadow-md bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-200 text-xl text-left">
         <div class="flex items-start gap-6">
-            <img class="max-w-[150px] rounded-full border-4 border-slate-300 shadow-md" src="./media/profile/profile_pic.jpg">
+            <img class="max-w-[150px] rounded-full border-4 border-slate-300 dark:border-gray-600 shadow-md"
+             src="./media/profile/profile_pic.jpg">
             <div class="flex flex-col">
                 <div class="mb-4">
-                    <h3 class="text-lg font-semibold mb-4 text-gray-800">Core Technologies</h3>
+                    <h3 class="text-lg font-semibold mb-4 text-gray-800 dark:text-gray-100">Core Technologies</h3>
                         <div class="flex flex-wrap gap-2">
                             <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">
                             JavaScript
@@ -37,23 +45,24 @@
                             </span>
                         </div>
                 </div>
-                <p class="aboutMeText text-base text-gray-700">I'm a Computer Science student who is passionate about software development and taking on difficult challenges. 
+                <p class="aboutMeText text-base text-gray-700 dark:text-gray-200">I'm a Computer Science student who is passionate about software development and taking on difficult challenges. 
                 I am eager to apply my programming and analytical skills to real-world projects. 
                 I'm currently looking for an entry-level position where I can be a valuable part of a team, learn from others, and gain experience.
                 </p>
             </div>
         </div>
-            <div class="contactMeBlock rounded-lg shadow-md p-6">
-                <h3 class="text-lg font-semibold mb-4 text-gray-800">Contact Me</h3>
+            <div class="contactMeBlock rounded-lg shadow-inner p-6 mt-4 bg-gray-100 dark:bg-gray-700">
+                <h3 class="text-lg font-semibold mb-4 text-gray-800 dark:bg-gray-700 dark:text-gray-100">Contact Me</h3>
                     <ul class="space-y-3">
                         <li class="flex items-center">
                             <span class="mr-2">📧</span> 
-                            <a href="mailto:artem.dybinnikov@gmail.com" class="text-gray-600 hover:text-blue-600">
+                            <a href="mailto:artem.dybinnikov@gmail.com" class="text-gray-600 hover:text-blue-600
+                            dark:text-gray-200">
                             artem.dybinnikov@gmail.com </a>
                         </li>
                         <li class="flex items-center">
                             <span class="mr-2">📍</span>
-                            <span class="text-gray-600">Cherkasy, Ukraine</span>
+                            <span class="text-gray-600 dark:text-gray-200">Cherkasy, Ukraine</span>
                         </li>
                     </ul>
             </div>
@@ -64,10 +73,26 @@
                 </a>
             </div>
     </div>
-    </section>
+    <div class="socialMediaButtons p-5 rounded-[20px] shadow-md bg-gray-50 dark:bg-gray-800 text-xl
+            items-center flex justify-evenly">
+                <a href="https://github.com/CNX-UA" target="_blank" rel="noopener noreferrer">
+                    <img src="./media/logos/github_512_black.png">
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img class_commented="max-w-[50px] rounded-full border-4 border-slate-300 hover:border-blue-700 hover:duration-400 hover:transition
+                    shadow-md" src="./media/logos/linkedin.jpg">
+                </a>
+                <a href="https://x.com/CNX_UA" target="_blank" rel="noopener noreferrer">
+                    <img src="./media/logos/x_logo.jpg">
+                </a>
+                <a href="https://cnx-ua.github.io/" target="_blank" rel="noopener noreferrer">
+                    <img src="./media/profile/profile_pic.jpg">
+                </a>
+            </div>
+</div>
     <!-- Tab bar content display -->
-    <div class="tabContentContainer max-w-[800px] min-w-[800px] mt-20 mb-2.5 p-5 rounded-[20px] shadow-md bg-gray-50 text-gray-800 text-xl
-     min-h-[600px] inline-block float-right align-top text-left mr-40">
+    <div class="tabContentContainer w-full lg:max-w-3xl p-5 rounded-[20px] shadow-md bg-gray-50 dark:bg-gray-800 text-gray-800
+     dark:text-gray-200 text-xl min-h-[600px] text-left">
         <div id="tab1Content" class="tabContent active">
             <!-- tab1 containing skills accordion-->
              <section id="skillsDisplay">
@@ -168,27 +193,13 @@
         </div> 
         temporarily disabled-->
     </div>
-    <div class="socialMediaButtons max-w-[600px] min-w-[600px] p-5 rounded-[20px] shadow-md bg-gray-50 text-gray-800 text-xl min-h-[70px] relative left-10
-    items-center flex justify-evenly">
-        <a href="https://github.com/CNX-UA" target="_blank" rel="noopener noreferrer">
-            <img src="./media/logos/github_512_black.png">
-        </a>
-        <a href="" target="_blank" rel="noopener noreferrer">
-            <img class="max-w-[50px] rounded-full border-4 border-slate-300 hover:border-blue-700 hover:duration-400 hover:transition
-            shadow-md" src="./media/logos/linkedin.jpg">
-        </a>
-        <a href="https://x.com/CNX_UA" target="_blank" rel="noopener noreferrer">
-            <img src="./media/logos/x_logo.jpg">
-        </a>
-        <a href="https://cnx-ua.github.io/" target="_blank" rel="noopener noreferrer">
-            <img src="./media/profile/profile_pic.jpg">
-        </a>
-    </div>
-    <div class="footer fixed bottom-0 left-1/2 -translate-x-1/2 w-full p-10 shadow-md bg-gray-50 text-gray-800 text-xl flex items-center flex-col justify-center">
+</main>
+    <div class="footer w-full p-10 shadow-md bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-200 text-xl flex items-center flex-col justify-center mt-auto">
         <p>© 2025 Artem Dubinnikov. All rights reserved.</p>
         <p>Built with HTML & Tailwind CSS.</p>
     </div>
     </section>
+    <script src="src/darkMode.js"></script>
     <script src="src/generalTabs.js"></script>
     <script src="src/generalAccordion.js"></script>
     <script src="src/main.js"></script>

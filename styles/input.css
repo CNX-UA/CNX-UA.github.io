@@ -1,15 +1,16 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @layer components {
 
     .tabBar > div {
-        @apply p-2.5 cursor-pointer border-b border-gray-400 transition-colors duration-300 dark:border-gray-600;
+        @apply p-2.5 cursor-pointer border-b border-gray-400 transition-colors duration-300 dark:border-gray-600 ;
     }
     .tabBar > div:not(.active):hover {
-        @apply hover:bg-gray-100 dark:hover:bg-gray-700;
+        @apply hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-gray-200;
     }
     .tabBar > div.active {
-        @apply font-bold border-b-2 border-black dark:border-white;
+        @apply font-bold border-b-2 border-black dark:border-white ;
     }
     .tabContent {
         @apply hidden;
@@ -30,7 +31,7 @@
     }
 
     .faqPanel {
-       @apply bg-white text-gray-800 overflow-hidden max-h-0 px-5 py-0 dark:bg-gray-800, dark:text-gray-200;
+       @apply bg-white text-gray-800 overflow-hidden max-h-0 px-5 py-0 dark:bg-gray-800 dark:text-gray-200;
 
         transition-property: max-height, padding;
         @apply duration-300 ease-in-out;
@@ -54,7 +55,7 @@
     }
 
     .projectsPanel {
-       @apply bg-white text-gray-800 overflow-hidden max-h-0 px-5 py-0 dark:bg-gray-800, dark:text-gray-200;
+       @apply bg-white text-gray-800 overflow-hidden max-h-0 px-5 py-0 dark:bg-gray-800 dark:text-gray-200;
 
         transition-property: max-height, padding;
         @apply duration-300 ease-in-out;
@@ -78,7 +79,7 @@
     }
 
     .skillsPanel {
-        @apply bg-white text-gray-800 overflow-hidden max-h-0 px-5 py-0 dark:bg-gray-800, dark:text-gray-200;
+        @apply bg-white text-gray-800 overflow-hidden max-h-0 px-5 py-0 dark:bg-gray-800 dark:text-gray-200;
 
         transition-property: max-height, padding;
         @apply duration-300 ease-in-out;
