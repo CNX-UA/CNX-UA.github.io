@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/output.css">
 <title>Tabs</title>
 </head>
@@ -45,11 +47,51 @@
         <div class="tab4" data-tab="tab4Content">Portfolio</div>
         <div class="tab5" data-tab="tab5Content">Previous Work Experience</div>
     </div>
-    <div class="max-w-[700px] min-w-[700px] min-h-[400px] my-20 p-5 rounded-[20px] shadow-md bg-gray-50 text-gray-800 text-xl inline-block float-left ml-10 align-top text-left">
-        <img class="max-w-[200px] rounded-full border-4 border-slate-300 shadow-md" src="./media/profile_pic.jpg">
-        I'm a Computer Science student who is passionate about software development and taking on difficult challenges. 
-        I am eager to apply my programming and analytical skills to real-world projects. 
-        I'm currently looking for an entry-level position where I can be a valuable part of a team, learn from others, and gain experience.
+    <div class="max-w-[700px] min-w-[700px] min-h-[400px] my-20 p-5 rounded-[20px] shadow-md bg-gray-50 text-gray-800
+     text-xl inline-block float-left ml-10 align-top text-left">
+        <div class="flex items-start gap-6">
+            <img class="max-w-[150px] rounded-full border-4 border-slate-300 shadow-md" src="./media/profile/profile_pic.jpg">
+            <div class="flex flex-col">
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold mb-4 text-gray-800">Core Technologies</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">
+                            JavaScript
+                            </span>
+                            <span class="bg-sky-100 text-sky-800 text-sm font-medium px-3 py-1 rounded-full">
+                            Tailwind CSS
+                            </span>
+                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">
+                            HTML5
+                            </span>
+                        </div>
+                </div>
+                <p class="text-base text-gray-700">I'm a Computer Science student who is passionate about software development and taking on difficult challenges. 
+                I am eager to apply my programming and analytical skills to real-world projects. 
+                I'm currently looking for an entry-level position where I can be a valuable part of a team, learn from others, and gain experience.
+                </p>
+            </div>
+        </div>
+            <div class="rounded-lg shadow-md p-6">
+                <h3 class="text-lg font-semibold mb-4 text-gray-800">Contact Me</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <span class="mr-2">📧</span> 
+                            <a href="mailto:artem.dybinnikov@gmail.com" class="text-gray-600 hover:text-blue-600">
+                            artem.dybinnikov@gmail.com </a>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="mr-2">📍</span>
+                            <span class="text-gray-600">Cherkasy, Ukraine</span>
+                        </li>
+                    </ul>
+            </div>
+            <div class="rounded-lg shadow-md p-6">
+                <a href="" download class="block w-full text-center bg-slate-600 text-white font-semibold py-3 px-4 rounded-lg 
+                shadow-md hover:bg-blue-700 transition duration-300">
+                Download CV
+                </a>
+            </div>
     </div>
     <!-- Tab bar content display -->
     <div class="tabContentContainer max-w-[800px] min-w-[800px] mt-20 mb-2.5 p-5 rounded-[20px] shadow-md bg-gray-50 text-gray-800 text-xl
@@ -125,11 +167,16 @@
             </section>
         </div>
     </div>
-    <div class="max-w-[600px] min-w-[600px] mt-140 p-5 rounded-[20px] shadow-md bg-gray-50 text-gray-800 text-xl min-h-[200px] relative left-10">
-        Placeholder
+    <div class="max-w-[600px] min-w-[600px] mt-190 p-5 rounded-[20px] shadow-md bg-gray-50 text-gray-800 text-xl min-h-[100px] relative left-10
+    items-center flex justify-evenly">
+        <img class="max-w-[50px] rounded-full border-4 border-slate-300 shadow-md" src="./media/logos/github_512_black.png">
+        <img class="max-w-[50px] rounded-full border-4 border-slate-300 shadow-md" src="./media/logos/linkedin.jpg">
+        <img class="max-w-[50px] rounded-full border-4 border-slate-300 shadow-md" src="./media/logos/x_logo.jpg">
+        <img class="max-w-[50px] rounded-full border-4 border-slate-300 shadow-md" src="./media/profile/profile_pic.jpg">
     </div>
-    <div class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full p-10 shadow-md bg-gray-50 text-gray-800 text-xl">
-        Placeholder
+    <div class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full p-10 shadow-md bg-gray-50 text-gray-800 text-xl flex items-center flex-col justify-center">
+        <p>© 2025 Artem Dubnikov. All rights reserved.</p>
+        <p>Built with HTML & Tailwind CSS.</p>
     </div>
     </section>
     <!--Cookie Popup Display-->
