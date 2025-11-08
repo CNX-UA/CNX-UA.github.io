@@ -54,7 +54,7 @@
         @apply overflow-hidden text-xl;
     }
 
-    .droplistButtonTab1 {
+   /* .droplistButtonTab1 {
         @apply bg-gray-100 cursor-pointer;
     }
     .droplistTab1 {
@@ -69,9 +69,48 @@
     }
     .droplistContentTab1.active > li:hover {
         @apply italic;
+    } temp disabled */
+
+    .projectsAccordion > button {
+        @apply bg-gray-100 text-gray-800 cursor-pointer p-[18px] w-full border-none border-b border-white text-left outline-none text-lg transition-colors duration-300;
+    }
+    .projectsAccordion > button:not(.active):hover {
+        @apply hover:bg-gray-300;
+    }
+    .projectsAccordion > button.active {
+        @apply bg-gray-400 font-bold;
     }
 
-    .workExpAccordion > button {
+    .projectsPanel {
+        @apply bg-white text-gray-800 overflow-hidden grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out;
+    }
+    .projectsPanel.active {
+        @apply grid-rows-[1fr] p-5;
+    }
+    .projectsPanel p {
+        @apply overflow-hidden text-xl;
+    }
+
+    .skillsAccordion > button {
+        @apply bg-gray-100 text-gray-800 cursor-pointer p-[18px] w-full border-none border-b border-white text-left outline-none text-lg transition-colors duration-300;
+    }
+    .skillsAccordion > button:not(.active):hover {
+        @apply hover:bg-gray-300;
+    }
+    .skillsAccordion > button.active {
+        @apply bg-gray-400 font-bold;
+    }
+
+    .skillsPanel {
+        @apply bg-white text-gray-800 overflow-hidden grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out;
+    }
+    .skillsPanel.active {
+        @apply grid-rows-[1fr] p-5;
+    }
+    .skillsPanel p {
+        @apply overflow-hidden text-xl;
+    }
+   /* .workExpAccordion > button {
         @apply bg-gray-100 text-gray-800 cursor-pointer p-[18px] w-full border-none border-b border-white text-left outline-none text-lg transition-colors duration-300;
     }
     .workExpAccordion > button:not(.active):hover {
@@ -89,7 +128,7 @@
     }
     .workExpPanel p {
         @apply overflow-hidden text-xl;
-    }
+    } temporarily disabled */
 
     #cookiePopupDisplay.hidden {
         @apply hidden;

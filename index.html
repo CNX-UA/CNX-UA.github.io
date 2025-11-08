@@ -42,10 +42,11 @@
     <div class="tabBar flex px-40 items-center gap-5 bg-gray-50 text-xl text-gray-800 text-center">
         <p class="mr-auto font-bold ">Artem Dubinnikov</p>
         <div class="tab1" data-tab="tab1Content">Skills</div>
-        <div class="tab2" data-tab="tab2Content">Contact</div>
-        <div class="tab3" data-tab="tab3Content">Eduction</div>
-        <div class="tab4" data-tab="tab4Content">Portfolio</div>
-        <div class="tab5" data-tab="tab5Content">Previous Work Experience</div>
+        <!--<div class="tab2" data-tab="tab2Content">Contact</div>temporarily disabled-->
+        <div class="tab3" data-tab="tab3Content">Education</div>
+        <div class="tab4" data-tab="tab4Content">Projects</div>
+        <!--<div class="tab5" data-tab="tab5Content">Experience</div> 
+        temporarily disabled-->
     </div>
     <section id="aboutMeSection">
     <div class="max-w-[700px] min-w-[700px] min-h-[400px] my-20 p-5 rounded-[20px] shadow-md bg-gray-50 text-gray-800
@@ -99,8 +100,26 @@
     <div class="tabContentContainer max-w-[800px] min-w-[800px] mt-20 mb-2.5 p-5 rounded-[20px] shadow-md bg-gray-50 text-gray-800 text-xl
      min-h-[600px] inline-block float-right align-top text-left mr-40">
         <div id="tab1Content" class="tabContent active">
-            <!-- tab1 containing droplist-->
-            <section id="dropListDisplay">
+            <!-- tab1 containing skills accordion-->
+             <section id="skillsDisplay">
+                <div class="skillsAccordion w-full max-w-[700px] mx-auto my-2.5">
+                    <button type="button" class="skillsAccordion1 rounded-tl-lg" data-panel="skills-panel1">1. Core Technologies</button>
+                        <div class="skillsPanel" id="skills-panel1">
+                            <p>HTML5 (Semantic markup)</p>
+                            <p>CSS3 (Styling, layout, and transitions)</p>
+                            <p>JavaScript (ES6+) (Core logic and functionality)</p>
+                        </div>
+                    <button type="button" class="skillsAccordion2" data-panel="skills-panel2">2. Placeholder</button>
+                        <div class="skillsPanel" id="skills-panel2">
+                            <p>Placeholder</p>
+                        </div>
+                    <button type="button" class="skillsAccordion3" data-panel="skills-panel3">3. Soft Skills</button>
+                        <div class="skillsPanel" id="skills-panel3">
+                            <p>Placeholder</p>
+                        </div>
+                </div>
+            </section>
+            <!-- <section id="dropListDisplay">
                 <div class="droplistButtonTab1 rounded-tl-lg" data-droplist="droplistTab1-1">Placeholder</div>
                     <div class="droplistTab1">
                         <ul class="droplistContentTab1" id="droplistTab1-1">
@@ -117,10 +136,10 @@
                             <li><button type="button">Placeholder</button></li>
                         </ul>
                     </div>
-            </section>
+            </section> temporarily disabled -->
         </div>
         <!-- tab2 containing textarea -->
-        <div id="tab2Content" class="tabContent text-black">
+        <!-- <div id="tab2Content" class="tabContent text-black">
             <section id="feedback textareaDisplay">
                 <form class="feedbackTextarea" id="feedbackTextarea" action=""></form>
                 <label for="feedbackInput" class="text-gray-800">Placeholder</label>
@@ -128,7 +147,8 @@
                 <span class="feedbackTextareaCounter text-gray-800">0 / 250</span>
                 <button class="sendFeedback bg-white text-gray-800 rounded-xs" id="sendFeedback">Placeholder</button>
             </section>
-        </div>
+        </div> temporarily disabled-->
+        <!-- tab 3 containing faq accordion-->
         <div id="tab3Content" class="tabContent accordion">
             <section id="faqDisplay">
                 <div class="faqAccordion w-full max-w-[700px] mx-auto my-2.5">
@@ -147,10 +167,27 @@
                 </div>
             </section>
         </div>
-        <div id="tab4Content" class="tabContent">
-            <p>Placeholder</p>
+        <!-- tab 4 containing project accordion-->
+        <div id="tab4Content" class="tabContent accordion">
+            <section id="projectsDisplay">
+                <div class="projectsAccordion w-full max-w-[700px] mx-auto my-2.5">
+                    <button type="button" class="projectsAccordion1 rounded-tl-lg" data-panel="projects-panel1">1. Placeholder</button>
+                        <div class="projectsPanel" id="projects-panel1">
+                            <p>Placeholder</p>
+                        </div>
+                    <button type="button" class="projectsAccordion1" data-panel="projects-panel2">2. Placeholder</button>
+                        <div class="projectsPanel" id="projects-panel2">
+                            <p>Placeholder</p>
+                        </div>
+                    <button type="button" class="projectsAccordion1" data-panel="projects-panel3">3. Placeholder</button>
+                        <div class="projectsPanel" id="projects-panel3">
+                            <p>Placeholder</p>
+                        </div>
+                </div>
+            </section>
+        </div> 
         </div>
-        <div id="tab5Content" class="tabContent accordion">
+       <!-- <div id="tab5Content" class="tabContent accordion">
             <section id="workExpDisplay">
                 <div class="workExpAccordion w-full max-w-[700px] mx-auto my-2.5">
                     <button type="button" class="workExpAccordion1 rounded-tl-lg" data-panel="workExp-panel1">1. Placeholder</button>
@@ -167,17 +204,18 @@
                         </div>
                 </div>
             </section>
-        </div>
+        </div> 
+        temporarily disabled-->
     </div>
-    <div class="max-w-[600px] min-w-[600px] mt-190 p-5 rounded-[20px] shadow-md bg-gray-50 text-gray-800 text-xl min-h-[100px] relative left-10
+    <div class="max-w-[600px] min-w-[600px] p-5 rounded-[20px] shadow-md bg-gray-50 text-gray-800 text-xl min-h-[70px] relative left-10
     items-center flex justify-evenly">
-        <img class="max-w-[50px] rounded-full border-4 border-slate-300 shadow-md" src="./media/logos/github_512_black.png">
-        <img class="max-w-[50px] rounded-full border-4 border-slate-300 shadow-md" src="./media/logos/linkedin.jpg">
-        <img class="max-w-[50px] rounded-full border-4 border-slate-300 shadow-md" src="./media/logos/x_logo.jpg">
-        <img class="max-w-[50px] rounded-full border-4 border-slate-300 shadow-md" src="./media/profile/profile_pic.jpg">
+        <img class="max-w-[50px] rounded-full border-4 border-slate-300 hover:border-blue-700 shadow-md" src="./media/logos/github_512_black.png">
+        <img class="max-w-[50px] rounded-full border-4 border-slate-300 hover:border-blue-700  shadow-md" src="./media/logos/linkedin.jpg">
+        <img class="max-w-[50px] rounded-full border-4 border-slate-300 hover:border-blue-700  shadow-md" src="./media/logos/x_logo.jpg">
+        <img class="max-w-[50px] rounded-full border-4 border-slate-300 hover:border-blue-700  shadow-md" src="./media/profile/profile_pic.jpg">
     </div>
     <div class="footer fixed bottom-0 left-1/2 -translate-x-1/2 w-full p-10 shadow-md bg-gray-50 text-gray-800 text-xl flex items-center flex-col justify-center">
-        <p>© 2025 Artem Dubnikov. All rights reserved.</p>
+        <p>© 2025 Artem Dubinnikov. All rights reserved.</p>
         <p>Built with HTML & Tailwind CSS.</p>
     </div>
     </section>
