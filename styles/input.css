@@ -45,7 +45,10 @@
     }
 
     .faqPanel {
-        @apply bg-white text-gray-800 overflow-hidden max-h-0 transition-all duration-300 ease-in-out;
+       @apply bg-white text-gray-800 overflow-hidden max-h-0 px-5 py-0;
+
+        transition-property: max-height, padding;
+        @apply duration-300 ease-in-out;
     }
     .faqPanel.active {
         @apply max-h-[500px] p-5;
@@ -82,7 +85,10 @@
     }
 
     .projectsPanel {
-        @apply bg-white text-gray-800 overflow-hidden max-h-0 transition-all duration-300 ease-in-out;
+       @apply bg-white text-gray-800 overflow-hidden max-h-0 px-5 py-0;
+
+        transition-property: max-height, padding;
+        @apply duration-300 ease-in-out;
     }
     .projectsPanel.active {
         @apply max-h-[500px] p-5;
@@ -102,7 +108,10 @@
     }
 
     .skillsPanel {
-        @apply bg-white text-gray-800 overflow-hidden max-h-0 transition-all duration-300 ease-in-out;
+        @apply bg-white text-gray-800 overflow-hidden max-h-0 px-5 py-0;
+
+        transition-property: max-height, padding;
+        @apply duration-300 ease-in-out;
     }
     .skillsPanel.active {
         @apply max-h-[500px] p-5;
