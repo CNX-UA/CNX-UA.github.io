@@ -7,42 +7,11 @@
 <title>Tabs</title>
 </head>
 <body class="bg-gray-200">
-     <!-- Login/Signup Display-->
-    <!-- <section id="loginSignupDisplay">
-        <div class="loginSignupTab flex justify-center gap-5 bg-white max-w-[840px] mx-auto text-xl">
-            <div class="login active" data-login-signup="loginContent">Login</div>
-            <div class="signup" data-login-signup="signupContent">Signup</div>
-        </div>
-    </section> commented out due to not being needed-->
-    <!-- Login/Signup content Display-->
-    <!-- <section id="loginSignupContent">
-        <div class="loginSignupContentContainer max-w-[800px] mx-auto my-2.5 p-5 bg-black text-white text-xl">
-            <div class="loginSignupContent active" id="loginContent">
-                <form class="login" action="">
-                    <label for="loginEmail">Email:</label><br>
-                    <input type="email" id="loginEmail" name="email"><br>
-                    <label for="loginPassword">Password:</label><br>
-                    <input type="password" id="loginPassword" name="password">
-                    <button type="submit" id="loginSubmitButton">Login</button>
-                </form>
-            </div>
-            <div class="loginSignupContent" id="signupContent">
-                <form class="signup" action="">
-                    <label for="signupEmail">Email:</label><br>
-                    <input type="email" id="signupEmail" name="email"><br>
-                    <label for="singupPassword">Password:</label><br>
-                    <input type="password" id="signupPassword" name="password">
-                    <button type="submit" id="signupSubmitButton">Signup</button>
-                </form>
-            </div>
-        </div>
-    </section> commented out due to not being needed-->
     <!-- Tab bar display -->
     <section id="tabBarDisplay" class="rounded-[20px] mx-auto bg-gray-200 flow-root">
     <div class="tabBar flex px-40 items-center gap-5 bg-gray-50 text-xl text-gray-800 text-center">
         <p class="mr-auto font-bold ">Artem Dubinnikov</p>
         <div class="tab1" data-tab="tab1Content">Skills</div>
-        <!--<div class="tab2" data-tab="tab2Content">Contact</div>temporarily disabled-->
         <div class="tab3" data-tab="tab3Content">Education</div>
         <div class="tab4" data-tab="tab4Content">Projects</div>
         <!--<div class="tab5" data-tab="tab5Content">Experience</div> 
@@ -128,36 +97,7 @@
                         </div>
                 </div>
             </section>
-            <!-- <section id="dropListDisplay">
-                <div class="droplistButtonTab1 rounded-tl-lg" data-droplist="droplistTab1-1">Placeholder</div>
-                    <div class="droplistTab1">
-                        <ul class="droplistContentTab1" id="droplistTab1-1">
-                            <li><button type="button">Placeholder</button></li>
-                            <li><button type="button">Placeholder</button></li>
-                            <li><button type="button">Placeholder</button></li>
-                        </ul>
-                    </div>
-                <div class="droplistButtonTab1" data-droplist="droplistTab1-2">Placeholder</div>
-                    <div class="droplistTab1">
-                        <ul class="droplistContentTab1" id="droplistTab1-2">
-                            <li><button type="button">Placeholder</button></li>
-                            <li><button type="button">Placeholder</button></li>
-                            <li><button type="button">Placeholder</button></li>
-                        </ul>
-                    </div>
-            </section> temporarily disabled -->
         </div>
-        <!-- tab2 containing textarea -->
-        <!-- <div id="tab2Content" class="tabContent text-black">
-            <section id="feedback textareaDisplay">
-                <form class="feedbackTextarea" id="feedbackTextarea" action=""></form>
-                <label for="feedbackInput" class="text-gray-800">Placeholder</label>
-                <textarea class="feedbackTextareaTab resize-none w-140 bg-slate-200 rounded-lg text-gray-800" id="feedbackInput" form="feedbackTextarea" autofocus cols="70" rows="4"></textarea>
-                <span class="feedbackTextareaCounter text-gray-800">0 / 250</span>
-                <button class="sendFeedback bg-white text-gray-800 rounded-xs" id="sendFeedback">Placeholder</button>
-            </section>
-        </div> temporarily disabled-->
-        <!-- tab 3 containing faq accordion-->
         <div id="tab3Content" class="tabContent accordion">
             <section id="faqDisplay">
                 <div class="faqAccordion w-full max-w-[700px] mx-auto my-2.5">
@@ -252,21 +192,6 @@
         <p>Built with HTML & Tailwind CSS.</p>
     </div>
     </section>
-    <!--Cookie Popup Display-->
-    <!-- <section id="cookiePopupDisplay" class="fixed bottom-[800px] right-[780px] z-1000 w-auto max-w-[350px] 
-    border-8 border-gray-400 rounded-[30px] bg-gray-100 shadow-lg mx-auto my-2.5">
-        <div class="cookiePopup flex flex-col items-center justify-center gap-0 text-xl">
-            <p>Accept Cookie</p>
-            <button id="acceptCookiesButton" class="flex items-center justify-center gap-5 bg-white
-                text-xl rounded-md p-2 hover:bg-gray-100 cursor-pointer">Accept</button>
-        </div>
-    </section>  temp disabled till fixed-->
-    <script src="src/droplist/generalDroplist.js"></script>
-    <script src="src/droplist/generalContentButtons.js"></script>
-    <script src="src/droplist/droplistTab1Buttons.js"></script>
-    <script src="src/generalTextarea.js"></script>
-    <script src="src/generalFormButton.js"></script>
-   <!-- <script src="src/cookiePopup.js"></script> temp disabled till fixed -->
     <script src="src/generalTabs.js"></script>
     <script src="src/generalAccordion.js"></script>
     <script src="src/main.js"></script>

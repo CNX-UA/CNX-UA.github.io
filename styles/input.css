@@ -1,22 +1,6 @@
 @import "tailwindcss";
 
 @layer components {
-    /* .loginSignupTab > div {
-        @apply p-2.5 cursor-pointer border-b border-black transition-colors duration-300;
-    }
-    .loginSignupTab > div:not(.active):hover {
-        @apply hover:bg-gray-100;
-    }
-    .loginSignupTab > div.active {
-        @apply font-bold border-b-2;
-    }
-    .loginSignupContent {
-        @apply hidden;
-    }
-    .loginSignupContent.active {
-        @apply block;
-    } 
-     commented out since it's unneeded   */ 
 
     .tabBar > div {
         @apply p-2.5 cursor-pointer border-b border-gray-400 transition-colors duration-300;
@@ -56,23 +40,6 @@
     .faqPanel p {
         @apply overflow-hidden text-xl;
     }
-
-   /* .droplistButtonTab1 {
-        @apply bg-gray-100 cursor-pointer;
-    }
-    .droplistTab1 {
-        @apply bg-slate-200 px-2.5 py-1.25;
-    }
-
-    .droplistContentTab1 {
-        @apply hidden;
-    }
-    .droplistContentTab1.active {
-        @apply block;
-    }
-    .droplistContentTab1.active > li:hover {
-        @apply italic;
-    } temp disabled */
 
     .projectsAccordion > button {
         @apply bg-gray-100 text-gray-800 cursor-pointer p-[18px] w-full border-none border-b border-white text-left outline-none text-lg transition-colors duration-300;
