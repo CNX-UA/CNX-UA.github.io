@@ -45,10 +45,10 @@
     }
 
     .faqPanel {
-        @apply bg-white text-gray-800 overflow-hidden grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out;
+        @apply bg-white text-gray-800 overflow-hidden max-h-0 transition-all duration-300 ease-in-out;
     }
     .faqPanel.active {
-        @apply grid-rows-[1fr] p-5;
+        @apply max-h-[500px] p-5;
     }
     .faqPanel p {
         @apply overflow-hidden text-xl;
@@ -82,10 +82,10 @@
     }
 
     .projectsPanel {
-        @apply bg-white text-gray-800 overflow-hidden grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out;
+        @apply bg-white text-gray-800 overflow-hidden max-h-0 transition-all duration-300 ease-in-out;
     }
     .projectsPanel.active {
-        @apply grid-rows-[1fr] p-5;
+        @apply max-h-[500px] p-5;
     }
     .projectsPanel p {
         @apply overflow-hidden text-xl;
@@ -102,12 +102,12 @@
     }
 
     .skillsPanel {
-        @apply bg-white text-gray-800 overflow-hidden grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-in-out;
+        @apply bg-white text-gray-800 overflow-hidden max-h-0 transition-all duration-300 ease-in-out;
     }
     .skillsPanel.active {
-        @apply grid-rows-[1fr] p-5;
+        @apply max-h-[500px] p-5;
     }
-    .skillsPanel p {
+    .skillsPanel > p {
         @apply overflow-hidden text-xl;
     }
    /* .workExpAccordion > button {
