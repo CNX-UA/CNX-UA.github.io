@@ -110,8 +110,8 @@
         @apply overflow-hidden text-xl;
     } temporarily disabled */
 
-    .socialMediaButtons > a > img{
+    .socialMediaButtons > a > img {
         @apply max-w-[50px] rounded-full border-4 border-slate-300 hover:border-blue-700 hover:duration-400
-         hover:transition shadow-md dark:border-gray-600;
+         hover:transition shadow-md dark:border-gray-600 bg-white dark:bg-gray-800;
     }
 }
