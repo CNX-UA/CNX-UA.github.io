@@ -3,13 +3,13 @@
 @layer components {
 
     .tabBar > div {
-        @apply p-2.5 cursor-pointer border-b border-gray-400 transition-colors duration-300;
+        @apply p-2.5 cursor-pointer border-b border-gray-400 transition-colors duration-300 dark:border-gray-600;
     }
     .tabBar > div:not(.active):hover {
-        @apply hover:bg-gray-100;
+        @apply hover:bg-gray-100 dark:hover:bg-gray-700;
     }
     .tabBar > div.active {
-        @apply font-bold border-b-2 border-black;
+        @apply font-bold border-b-2 border-black dark:border-white;
     }
     .tabContent {
         @apply hidden;
@@ -19,17 +19,18 @@
     }
 
     .faqAccordion > button {
-        @apply bg-gray-100 text-gray-800 cursor-pointer p-[18px] w-full border-none border-b border-white text-left outline-none text-lg transition-colors duration-300;
+        @apply bg-gray-100 text-gray-800 cursor-pointer p-[18px] w-full border-none border-b border-white
+         text-left outline-none text-lg transition-colors duration-300 dark:bg-gray-700 dark:text-gray-100 dark:border-gray-600;
     }
     .faqAccordion > button:not(.active):hover {
-        @apply hover:bg-gray-300;
+        @apply hover:bg-gray-300 dark:hover:bg-gray-600;
     }
     .faqAccordion > button.active {
-        @apply bg-gray-400 font-bold;
+        @apply bg-gray-400 font-bold dark:bg-gray-500;
     }
 
     .faqPanel {
-       @apply bg-white text-gray-800 overflow-hidden max-h-0 px-5 py-0;
+       @apply bg-white text-gray-800 overflow-hidden max-h-0 px-5 py-0 dark:bg-gray-800, dark:text-gray-200;
 
         transition-property: max-height, padding;
         @apply duration-300 ease-in-out;
@@ -42,17 +43,18 @@
     }
 
     .projectsAccordion > button {
-        @apply bg-gray-100 text-gray-800 cursor-pointer p-[18px] w-full border-none border-b border-white text-left outline-none text-lg transition-colors duration-300;
+        @apply bg-gray-100 text-gray-800 cursor-pointer p-[18px] w-full border-none border-b border-white
+         text-left outline-none text-lg transition-colors duration-300 dark:bg-gray-700 dark:text-gray-100 dark:border-gray-600;
     }
     .projectsAccordion > button:not(.active):hover {
-        @apply hover:bg-gray-300;
+        @apply hover:bg-gray-300 dark:hover:bg-gray-600;
     }
     .projectsAccordion > button.active {
-        @apply bg-gray-400 font-bold;
+        @apply bg-gray-400 font-bold dark:bg-gray-500;
     }
 
     .projectsPanel {
-       @apply bg-white text-gray-800 overflow-hidden max-h-0 px-5 py-0;
+       @apply bg-white text-gray-800 overflow-hidden max-h-0 px-5 py-0 dark:bg-gray-800, dark:text-gray-200;
 
         transition-property: max-height, padding;
         @apply duration-300 ease-in-out;
@@ -65,17 +67,18 @@
     }
 
     .skillsAccordion > button {
-        @apply bg-gray-100 text-gray-800 cursor-pointer p-[18px] w-full border-none border-b border-white text-left outline-none text-lg transition-colors duration-300;
+        @apply bg-gray-100 text-gray-800 cursor-pointer p-[18px] w-full border-none border-b border-white 
+        text-left outline-none text-lg transition-colors duration-300 dark:bg-gray-700 dark:text-gray-100 dark:border-gray-600;
     }
     .skillsAccordion > button:not(.active):hover {
-        @apply hover:bg-gray-300;
+        @apply hover:bg-gray-300 dark:hover:bg-gray-600;
     }
     .skillsAccordion > button.active {
-        @apply bg-gray-400 font-bold;
+        @apply bg-gray-400 font-bold dark:bg-gray-500;
     }
 
     .skillsPanel {
-        @apply bg-white text-gray-800 overflow-hidden max-h-0 px-5 py-0;
+        @apply bg-white text-gray-800 overflow-hidden max-h-0 px-5 py-0 dark:bg-gray-800, dark:text-gray-200;
 
         transition-property: max-height, padding;
         @apply duration-300 ease-in-out;
@@ -107,6 +110,7 @@
     } temporarily disabled */
 
     .socialMediaButtons > a > img{
-        @apply max-w-[50px] rounded-full border-4 border-slate-300 hover:border-blue-700 hover:duration-400 hover:transition shadow-md;
+        @apply max-w-[50px] rounded-full border-4 border-slate-300 hover:border-blue-700 hover:duration-400
+         hover:transition shadow-md dark:border-gray-600;
     }
 }

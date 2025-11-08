@@ -22,6 +22,7 @@
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-700: oklch(37.3% 0.034 259.733);
     --color-gray-800: oklch(27.8% 0.033 256.848);
@@ -519,11 +520,21 @@
     transition-duration: var(--tw-duration, var(--default-transition-duration));
     --tw-duration: 300ms;
     transition-duration: 300ms;
+    @media (prefers-color-scheme: dark) {
+      border-color: var(--color-gray-600);
+    }
   }
   .tabBar > div:not(.active):hover {
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-100);
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      &:hover {
+        @media (hover: hover) {
+          background-color: var(--color-gray-700);
+        }
       }
     }
   }
@@ -533,6 +544,9 @@
     border-color: var(--color-black);
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+    @media (prefers-color-scheme: dark) {
+      border-color: var(--color-white);
+    }
   }
   .tabContent {
     display: none;
@@ -561,6 +575,15 @@
     transition-duration: 300ms;
     --tw-outline-style: none;
     outline-style: none;
+    @media (prefers-color-scheme: dark) {
+      border-color: var(--color-gray-600);
+    }
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-gray-700);
+    }
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-gray-100);
+    }
   }
   .faqAccordion > button:not(.active):hover {
     &:hover {
@@ -568,11 +591,21 @@
         background-color: var(--color-gray-300);
       }
     }
+    @media (prefers-color-scheme: dark) {
+      &:hover {
+        @media (hover: hover) {
+          background-color: var(--color-gray-600);
+        }
+      }
+    }
   }
   .faqAccordion > button.active {
     background-color: var(--color-gray-400);
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+    @media (prefers-color-scheme: dark) {
+      background-color: var(--color-gray-500);
+    }
   }
   .faqPanel {
     max-height: calc(var(--spacing) * 0);
