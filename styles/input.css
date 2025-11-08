@@ -106,12 +106,7 @@
         @apply overflow-hidden text-xl;
     } temporarily disabled */
 
-    #cookiePopupDisplay.hidden {
-        @apply hidden;
-    }
-
-    .error {
-        @apply border-red-500;
-        @apply focus:outline-none focus:ring-2 focus:ring-red-500;
+    .socialMediaButtons > a > img{
+        @apply max-w-[50px] rounded-full border-4 border-slate-300 hover:border-blue-700 hover:duration-400 hover:transition shadow-md;
     }
 }
