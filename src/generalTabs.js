@@ -24,6 +24,8 @@ function initializeTabsGeneral(tabsLocation, tabsContent, datasetKey) {
 
     if (targetContent) {
       targetContent.classList.add("active");
+
+      targetContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
 

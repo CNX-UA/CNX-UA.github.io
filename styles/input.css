@@ -13,7 +13,7 @@
         @apply font-bold border-b-2 border-black dark:border-white ;
     }
     .tabContent {
-        @apply hidden;
+        @apply hidden scroll-mt-30;
     }
     .tabContent.active {
         @apply block;
