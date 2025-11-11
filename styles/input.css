@@ -1,7 +1,13 @@
 @import "tailwindcss";
+
 @custom-variant dark (&:where(.dark, .dark *));
 
-@layer components {
+@theme {
+    --breakpoint-desktop: 62.5rem;
+    }
+:root {
+    --breakpoint-desktop: 62.5rem;
+}
 
     .tabBar > div {
         @apply p-2.5 cursor-pointer border-b border-gray-400 transition-colors duration-300 dark:border-gray-600 ;
@@ -114,4 +120,3 @@
         @apply max-w-[50px] rounded-full border-4 border-slate-300 hover:border-blue-700 hover:duration-400
          hover:transition shadow-md dark:border-gray-600 bg-white dark:bg-gray-800;
     }
-}

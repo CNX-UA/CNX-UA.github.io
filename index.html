@@ -9,13 +9,13 @@
 <body class="bg-gray-200 dark:bg-gray-900 dark:text-gray-300 flex flex-col min-h-screen">
     <!-- Tab bar display -->
 <header id="tabBarDisplay" class="sticky top-0 z-10 rounded-b-[20px] mx-auto bg-gray-200 dark:bg-gray-900 shadow-md w-full ">
-    <div class="tabBar flex flex-wrap justify-between sm:flex-nowrap px-4 lg:px-40 sm:gap-4 items-center bg-gray-50 dark:bg-gray-800 text-[15px] sm:text-xl w-full
+    <div class="tabBar desktop:hidden flex flex-wrap justify-between px-4 lg:px-40 sm:gap-4 items-center bg-gray-50 dark:bg-gray-800 text-[15px] sm:text-xl w-full
      text-gray-800 dark:text-gray-200 text-center py-2">
         <p class="mr-auto font-bold ">Artem Dubinnikov</p>
         <div class="tab1" data-tab="tab1Content">Skills</div>
         <div class="tab3" data-tab="tab3Content">Education</div>
         <div class="tab4" data-tab="tab4Content">Projects</div>
-        <button id="themeToggle" class="ml-4 px-2 py-1 rounded-lg text-sm font-medium bg-gray-200 dark:bg-gray-900
+        <button class="themeToggle ml-4 px-2 py-1 rounded-lg text-sm font-medium bg-gray-200 dark:bg-gray-900
          hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors dark:text-gray-200">
             Dark Mode
         </button>
@@ -77,8 +77,21 @@
     </div>
 </div>
     <!-- Tab bar content display -->
+
     <div class="tabContentContainer w-full lg:max-w-3xl p-5 rounded-[20px] shadow-md bg-gray-50 dark:bg-gray-800 text-gray-800
      dark:text-gray-200 text-xl min-h-[600px] text-left sm:col-start-2 sm:row-start-1 sm:row-span-2">
+     <div class="tabBar hidden desktop:flex desktop:flex-wrap desktop:justify-between desktop:px-4 
+    desktop:gap-4 desktop:items-center desktop:bg-gray-50 dark:bg-gray-800 desktop:text-xl desktop:w-full
+     desktop:text-gray-800 desktop:dark:text-gray-200 text-center py-2">
+        <p class="mr-auto font-bold ">Artem Dubinnikov</p>
+        <div class="tab1" data-tab="tab1Content">Skills</div>
+        <div class="tab3" data-tab="tab3Content">Education</div>
+        <div class="tab4" data-tab="tab4Content">Projects</div>
+        <button class="themeToggle ml-4 px-2 py-1 rounded-lg text-sm font-medium bg-gray-200 dark:bg-gray-900
+         hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors dark:text-gray-200">
+            Dark Mode
+        </button>
+</div>
         <div id="tab1Content" class="tabContent active">
             <!-- tab1 containing skills accordion-->
              <section id="skillsDisplay">
@@ -131,34 +144,68 @@
         <div id="tab4Content" class="tabContent accordion">
             <section id="projectsDisplay">
                 <div class="projectsAccordion w-full max-w-[700px] mx-auto my-2.5">
-                    <button type="button" class="projectsAccordion1 rounded-tl-lg" data-panel="projects-panel1">1. Single-Page CV</button>
-                        <div class="projectsPanel" id="projects-panel1">
-                            <p>Placeholder</p>
-                        </div>
-                    <button type="button" class="projectsAccordion2" data-panel="projects-panel2">2. Tabs</button>
+                    <button type="button" class="projectsAccordion2" data-panel="projects-panel2">1. Tabs</button>
                         <div class="projectsPanel" id="projects-panel2">
-                            <p>Placeholder</p>
+                            <p>Implemented an interactive tabs interface, gaining experience in JavaScript
+                                 event handling to detect user clicks, DOM manipulation to toggle content visibility, 
+                                 and managing active states by adding/removing CSS classes.</p>
+                                <div class="flex items-center justify-between mt-2">
+                                    <a href="https://github.com/CNX-UA/Tabs" class="text-green-600 hover:text-blue-600">
+                                        GitHub </a>
+                                    <a href="https://cnx-ua.github.io/Tabs/" class="text-green-600 hover:text-blue-600">
+                                        Live Demo </a>
+                                </div>
                         </div>
-                    <button type="button" class="projectsAccordion3" data-panel="projects-panel3">3. Cookie Consent</button>
+                    <button type="button" class="projectsAccordion3" data-panel="projects-panel3">2. Cookie Consent</button>
                         <div class="projectsPanel" id="projects-panel3">
-                            <p>Placeholder</p>
+                            <p>Created a functional cookie consent banner, applying skills in basic DOM manipulation
+                                 and JavaScript event listeners to respond to user acceptance.</p>
+                                <div class="flex items-center justify-between mt-2">
+                                    <a href="" class="text-green-600 hover:text-blue-600">
+                                        GitHub </a>
+                                    <a href="" class="text-green-600 hover:text-blue-600">
+                                        Live Demo </a>
+                                </div>
                         </div>
-                    <button type="button" class="projectsAccordion4" data-panel="projects-panel4">4. Restricted Textarea</button>
+                    <button type="button" class="projectsAccordion4" data-panel="projects-panel4">3. Restricted Textarea</button>
                         <div class="projectsPanel" id="projects-panel4">
-                            <p>Placeholder</p>
+                            <p>Developed a dynamic textarea component, demonstrating skills in real-time JavaScript event handling (oninput), 
+                                DOM manipulation, and conditional CSS styling.</p>
+                                <div class="flex items-center justify-between mt-2">
+                                    <a href="https://github.com/CNX-UA/Restricted-Textarea" class="text-green-600 hover:text-blue-600">
+                                        GitHub </a>
+                                    <a href="https://cnx-ua.github.io/Restricted-Textarea/" class="text-green-600 hover:text-blue-600">
+                                        Live Demo </a>
+                                </div>
                         </div>
-                    <button type="button" class="projectsAccordion5" data-panel="projects-panel5">5. Accordion</button>
+                    <button type="button" class="projectsAccordion5" data-panel="projects-panel5">4. Accordion</button>
                         <div class="projectsPanel" id="projects-panel5">
-                            <p>Placeholder</p>
+                            <p>Programmed a responsive accordion component, developing skills in JavaScript-based
+                                 DOM manipulation to show and hide content panels 
+                                 and event handling to manage the state of multiple sections.</p>
+                                <div class="flex items-center justify-between mt-2">
+                                    <a href="https://github.com/CNX-UA/Accordion" class="text-green-600 hover:text-blue-600">
+                                        GitHub </a>
+                                    <a href="" class="text-green-600 hover:text-blue-600">
+                                        Live Demo </a>
+                                </div>
                         </div>
-                    <button type="button" class="projectsAccordion6" data-panel="projects-panel6">6. Custom Dropdown</button>
+                    <button type="button" class="projectsAccordion6" data-panel="projects-panel6">5. Custom Dropdown</button>
                         <div class="projectsPanel" id="projects-panel6">
-                            <p>Placeholder</p>
+                            <p>Built a custom dropdown menu from scratch, proving proficiency in managing component state with JavaScript,
+                                 handling user click events, 
+                                and using CSS for precise UI control.</p>
+                                <div class="flex items-center justify-between mt-2">
+                                    <a href="https://github.com/CNX-UA/Custom-Dropdown" class="text-green-600 hover:text-blue-600">
+                                        GitHub </a>
+                                    <a href="https://cnx-ua.github.io/Custom-Dropdown/" class="text-green-600 hover:text-blue-600">
+                                        Live Demo </a>
+                                </div>
                         </div>
                 </div>
             </section>
         </div> 
-        </div>
+    </div>
        <!-- <div id="tab5Content" class="tabContent accordion">
             <section id="workExpDisplay">
                 <div class="workExpAccordion w-full max-w-[700px] mx-auto my-2.5">
@@ -195,7 +242,7 @@
             </div>
     </div>
 </main>
-    <div class="footer w-full p-10 shadow-md bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-200 text-xl flex items-center flex-col justify-center mt-auto">
+    <div class="footer w-full p-2 shadow-md bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-200 text-sm flex items-center flex-col justify-center mt-auto">
         <p>© 2025 Artem Dubinnikov.</p>
         <p>All rights reserved.</p>
         <p>Built with HTML & Tailwind CSS.</p>
