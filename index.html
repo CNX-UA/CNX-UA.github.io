@@ -79,8 +79,8 @@
     <!-- Tab bar content display -->
 
     <div class="tabContentContainer w-full lg:max-w-3xl p-5 rounded-[20px] shadow-md bg-gray-50 dark:bg-gray-800 text-gray-800
-     dark:text-gray-200 text-xl min-h-[600px] text-left sm:col-start-2 sm:row-start-1 sm:row-span-2">
-     <div class="tabBar hidden desktop:flex desktop:flex-wrap desktop:justify-between desktop:px-4 
+     dark:text-gray-200 text-xl min-h-[600px] text-left sm:col-start-2 sm:row-start-1 sm:row-span-2 overflow-y-auto desktop:max-h-300 max-h-5 snap-center">
+     <div class="tabBar hidden desktop:flex desktop:flex-wrap desktop:justify-between desktop:px-4 no-scrollbar
     desktop:gap-4 desktop:items-center desktop:bg-gray-50 dark:bg-gray-800 desktop:text-xl desktop:w-full
      desktop:text-gray-800 desktop:dark:text-gray-200 text-center py-2">
         <p class="mr-auto font-bold ">Artem Dubinnikov</p>
@@ -125,17 +125,23 @@
         <div id="tab3Content" class="tabContent accordion">
             <section id="faqDisplay">
                 <div class="faqAccordion w-full max-w-[700px] mx-auto my-2.5">
-                    <button type="button" class="faqAccordion1 rounded-tl-lg" data-panel="panel1">1. </button>
+                    <button type="button" class="faqAccordion1 rounded-tl-lg" data-panel="panel1">Vocational Qualification: Computer Typesetting Operator
+                         (Category 1) & Administrator</button>
                         <div class="faqPanel" id="panel1">
-                            <p>Placeholder</p>
+                            <p>Graduated with Honors, demonstrating precision, diligence, and mastery of a technical craft.
+                                Expertise in typography, digital layout, and visual hierarchy, directly supporting front-end development and UI/UX design.
+                                Proven attention to detail essential for creating pixel-perfect interfaces and debugging complex code.</p>
                         </div>
-                    <button type="button" class="faqAccordion2" data-panel="panel2">2. </button>
+                    <button type="button" class="faqAccordion2" data-panel="panel2">Philology, Germanic Languages and Literature (English Translation) </button>
                         <div class="faqPanel" id="panel2">
-                            <p>Placeholder</p>
+                            <p>Possess advanced English proficiency (C1/C2), enabling clear communication in technical environments and mastery of documentation.
+                            Skilled in localization (L10n) and adapting content for global audiences.
+                            Strong analytical skills, with a deep understanding of syntax and structure applicable to learning programming languages.</p>
                         </div>
-                    <button type="button" class="faqAccordion3" data-panel="panel3">3. </button>
+                    <button type="button" class="faqAccordion3" data-panel="panel3">Associate Degree in Computer Science (In Progress)</button>
                         <div class="faqPanel" id="panel3">
-                            <p>Placeholder</p>
+                            <p>Developing a strong foundation in algorithms, data structures, and software development principles relevant
+                                 to building and maintaining complex applications.</p>
                         </div>
                 </div>
             </section>
@@ -144,7 +150,7 @@
         <div id="tab4Content" class="tabContent accordion">
             <section id="projectsDisplay">
                 <div class="projectsAccordion w-full max-w-[700px] mx-auto my-2.5">
-                    <button type="button" class="projectsAccordion2" data-panel="projects-panel2">1. Tabs</button>
+                    <button type="button" class="projectsAccordion2 rounded-tl-lg" data-panel="projects-panel2">1. Tabs</button>
                         <div class="projectsPanel" id="projects-panel2">
                             <p>Implemented an interactive tabs interface, gaining experience in JavaScript
                                  event handling to detect user clicks, DOM manipulation to toggle content visibility, 

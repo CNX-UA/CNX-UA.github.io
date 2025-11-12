@@ -9,6 +9,10 @@
     --breakpoint-desktop: 62.5rem;
 }
 
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}
+
     .tabBar > div {
         @apply p-2.5 cursor-pointer border-b border-gray-400 transition-colors duration-300 dark:border-gray-600 ;
     }
